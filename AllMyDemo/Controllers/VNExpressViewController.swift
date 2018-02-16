@@ -21,7 +21,7 @@ class VNExpressViewController: UIViewController, UICollectionViewDataSource, UIC
         didSet {
 //            print("selectedIndexPath", selectedIndexPath)
             let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyBoard.instantiateViewController(withIdentifier: "VNEXPRESSCONTENT") as! VnExpressContentViewController
+            let vc = storyBoard.instantiateViewController(withIdentifier: "VNEXPRESSCOLLECTION") as! VnExpressCollectionViewController
             vc.link = RSSUrls[(selectedIndexPath?.row)!]
         }
     }

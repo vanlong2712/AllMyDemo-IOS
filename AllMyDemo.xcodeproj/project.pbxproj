@@ -21,7 +21,9 @@
 		FD218BF12035E94900C4E0B5 /* VNExpressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD218BF02035E94900C4E0B5 /* VNExpressViewController.swift */; };
 		FD218BF42036109100C4E0B5 /* VNExpressContentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD218BF22036109100C4E0B5 /* VNExpressContentCollectionViewCell.swift */; };
 		FD218BF52036109100C4E0B5 /* VNExpressContentCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD218BF32036109100C4E0B5 /* VNExpressContentCollectionViewCell.xib */; };
-		FD218BF72036149500C4E0B5 /* VnExpressContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD218BF62036149500C4E0B5 /* VnExpressContentViewController.swift */; };
+		FD218BF920370C6D00C4E0B5 /* VnExpressCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD218BF820370C6D00C4E0B5 /* VnExpressCollectionViewController.swift */; };
+		FD218C002037194700C4E0B5 /* VnExpressTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD218BFE2037194700C4E0B5 /* VnExpressTableViewCell.swift */; };
+		FD218C012037194700C4E0B5 /* VnExpressTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD218BFF2037194700C4E0B5 /* VnExpressTableViewCell.xib */; };
 		FD2348B3202DD8920066C531 /* DiceeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2348B2202DD8920066C531 /* DiceeViewController.swift */; };
 		FD2348B5202DDC4A0066C531 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2348B4202DDC4A0066C531 /* WeatherViewController.swift */; };
 		FD2348B8202DDCAA0066C531 /* WeatherDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2348B7202DDCAA0066C531 /* WeatherDataModel.swift */; };
@@ -64,7 +66,9 @@
 		FD218BF02035E94900C4E0B5 /* VNExpressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VNExpressViewController.swift; sourceTree = "<group>"; };
 		FD218BF22036109100C4E0B5 /* VNExpressContentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VNExpressContentCollectionViewCell.swift; sourceTree = "<group>"; };
 		FD218BF32036109100C4E0B5 /* VNExpressContentCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VNExpressContentCollectionViewCell.xib; sourceTree = "<group>"; };
-		FD218BF62036149500C4E0B5 /* VnExpressContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VnExpressContentViewController.swift; sourceTree = "<group>"; };
+		FD218BF820370C6D00C4E0B5 /* VnExpressCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VnExpressCollectionViewController.swift; sourceTree = "<group>"; };
+		FD218BFE2037194700C4E0B5 /* VnExpressTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VnExpressTableViewCell.swift; sourceTree = "<group>"; };
+		FD218BFF2037194700C4E0B5 /* VnExpressTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VnExpressTableViewCell.xib; sourceTree = "<group>"; };
 		FD2348B2202DD8920066C531 /* DiceeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceeViewController.swift; sourceTree = "<group>"; };
 		FD2348B4202DDC4A0066C531 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		FD2348B7202DDCAA0066C531 /* WeatherDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataModel.swift; sourceTree = "<group>"; };
@@ -212,7 +216,7 @@
 				FD90E28820353ABE005C0E4B /* NewsViewController.swift */,
 				FDA4165D203598F8005719D9 /* WebViewController.swift */,
 				FD218BF02035E94900C4E0B5 /* VNExpressViewController.swift */,
-				FD218BF62036149500C4E0B5 /* VnExpressContentViewController.swift */,
+				FD218BF820370C6D00C4E0B5 /* VnExpressCollectionViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -228,6 +232,8 @@
 				FD218BED2035E8AD00C4E0B5 /* VNExpressCollectionViewCell.xib */,
 				FD218BF22036109100C4E0B5 /* VNExpressContentCollectionViewCell.swift */,
 				FD218BF32036109100C4E0B5 /* VNExpressContentCollectionViewCell.xib */,
+				FD218BFE2037194700C4E0B5 /* VnExpressTableViewCell.swift */,
+				FD218BFF2037194700C4E0B5 /* VnExpressTableViewCell.xib */,
 			);
 			path = "Custom Cell";
 			sourceTree = "<group>";
@@ -299,6 +305,7 @@
 				FD0B9F00202DCD16001E8346 /* note5.wav in Resources */,
 				FDEF1531202DBF4C009D64E3 /* Assets.xcassets in Resources */,
 				FD0B9EFD202DCD16001E8346 /* note7.wav in Resources */,
+				FD218C012037194700C4E0B5 /* VnExpressTableViewCell.xib in Resources */,
 				FD0B9EFF202DCD16001E8346 /* note3.wav in Resources */,
 				FD0B9EFC202DCD16001E8346 /* note4.wav in Resources */,
 				FDEF152F202DBF4C009D64E3 /* Main.storyboard in Resources */,
@@ -385,13 +392,13 @@
 				FDA4165E203598F8005719D9 /* WebViewController.swift in Sources */,
 				FD218BF42036109100C4E0B5 /* VNExpressContentCollectionViewCell.swift in Sources */,
 				FDEF1544202DC421009D64E3 /* RootTableViewCell.swift in Sources */,
+				FD218BF920370C6D00C4E0B5 /* VnExpressCollectionViewController.swift in Sources */,
 				FD2348B5202DDC4A0066C531 /* WeatherViewController.swift in Sources */,
 				FD2348BA202DEE860066C531 /* CityWeatherViewController.swift in Sources */,
 				FD2348B8202DDCAA0066C531 /* WeatherDataModel.swift in Sources */,
 				FDEF152A202DBF4C009D64E3 /* AppDelegate.swift in Sources */,
 				FD89C3E6203087D900A8A5A2 /* QuestionBank.swift in Sources */,
 				FD218BF12035E94900C4E0B5 /* VNExpressViewController.swift in Sources */,
-				FD218BF72036149500C4E0B5 /* VnExpressContentViewController.swift in Sources */,
 				FD218BEE2035E8AD00C4E0B5 /* VNExpressCollectionViewCell.swift in Sources */,
 				FD0B9EEF202DCB7C001E8346 /* XylophoneViewController.swift in Sources */,
 				FD89C3E2203086CC00A8A5A2 /* QuestionViewController.swift in Sources */,
@@ -400,6 +407,7 @@
 				FD90E28920353ABE005C0E4B /* NewsViewController.swift in Sources */,
 				FDEF1540202DC0DE009D64E3 /* RootTableViewController.swift in Sources */,
 				FDB868B1202F211D0048CB01 /* CalculatorViewController.swift in Sources */,
+				FD218C002037194700C4E0B5 /* VnExpressTableViewCell.swift in Sources */,
 				FD37FA822033F11F006FC6B6 /* ItemTableViewController.swift in Sources */,
 				FD37FA7E2033E74C006FC6B6 /* TodoeyModel.xcdatamodeld in Sources */,
 				FD89C3E42030877D00A8A5A2 /* Question.swift in Sources */,

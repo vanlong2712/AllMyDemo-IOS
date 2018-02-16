@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RootTableViewController" customModule="AllMyDemo" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="rootCell" id="l3H-nm-HUr" customClass="RootTableViewCell" customModule="AllMyDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="l3H-nm-HUr" id="goD-FX-CCC">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xNK-lh-lGe">
+                        <rect key="frame" x="0.0" y="0.0" width="49" height="43"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="49" id="0Ya-I4-7SR"/>
+                            <constraint firstAttribute="height" constant="43" id="cj0-tt-FwM"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LPJ-6A-0xp">
+                        <rect key="frame" x="49" y="0.0" width="326" height="44"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="LPJ-6A-0xp" secondAttribute="trailing" id="0pq-Mq-Cr3"/>
+                    <constraint firstItem="LPJ-6A-0xp" firstAttribute="leading" secondItem="xNK-lh-lGe" secondAttribute="trailing" id="1Jl-S6-ffI"/>
+                    <constraint firstItem="xNK-lh-lGe" firstAttribute="leading" secondItem="goD-FX-CCC" secondAttribute="leading" id="1eN-tU-OaO"/>
+                    <constraint firstItem="xNK-lh-lGe" firstAttribute="top" secondItem="goD-FX-CCC" secondAttribute="top" id="Gz4-fq-osu"/>
+                    <constraint firstAttribute="bottom" secondItem="xNK-lh-lGe" secondAttribute="bottom" id="TJa-vj-rll"/>
+                    <constraint firstItem="LPJ-6A-0xp" firstAttribute="top" secondItem="goD-FX-CCC" secondAttribute="top" id="Yvp-T1-qGh"/>
+                    <constraint firstAttribute="bottom" secondItem="LPJ-6A-0xp" secondAttribute="bottom" id="mkG-rR-lWK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iconApplication" destination="xNK-lh-lGe" id="IMm-zG-agC"/>
+                <outlet property="nameApplication" destination="LPJ-6A-0xp" id="gCZ-pt-8wr"/>
+            </connections>
+            <point key="canvasLocation" x="-314.5" y="-781"/>
+        </tableViewCell>
+    </objects>
+</document>

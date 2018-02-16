@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="danTriHomeCell" id="WXE-3e-Y4T" customClass="NewsHomePageCollectionViewCell" customModule="AllMyDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="107" height="154"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="107" height="154"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oeh-n7-8KH">
+                        <rect key="frame" x="0.0" y="0.0" width="107" height="154"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="cornerRadius" value="5"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Disney Build It: Frozen" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vOK-4i-e5q">
+                        <rect key="frame" x="2" y="91.5" width="103" height="62.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="vOK-4i-e5q" secondAttribute="height" multiplier="51:31" id="HGH-CB-Kwo"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="oeh-n7-8KH" firstAttribute="leading" secondItem="WXE-3e-Y4T" secondAttribute="leading" id="L0F-WU-MW1"/>
+                <constraint firstAttribute="trailing" secondItem="oeh-n7-8KH" secondAttribute="trailing" id="ZEd-fQ-bi0"/>
+                <constraint firstAttribute="trailing" secondItem="vOK-4i-e5q" secondAttribute="trailing" constant="2" id="kyL-iR-Wsa"/>
+                <constraint firstAttribute="bottom" secondItem="oeh-n7-8KH" secondAttribute="bottom" id="mw9-x9-XF3"/>
+                <constraint firstItem="vOK-4i-e5q" firstAttribute="leading" secondItem="WXE-3e-Y4T" secondAttribute="leading" constant="2" id="tNn-wa-keo"/>
+                <constraint firstAttribute="bottom" secondItem="vOK-4i-e5q" secondAttribute="bottom" id="xH2-Mz-rLM"/>
+                <constraint firstItem="oeh-n7-8KH" firstAttribute="top" secondItem="WXE-3e-Y4T" secondAttribute="top" id="zmr-Rw-rHR"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="kJw-GV-edF"/>
+            <size key="customSize" width="107" height="154"/>
+            <connections>
+                <outlet property="imageView" destination="oeh-n7-8KH" id="g04-bs-tkJ"/>
+                <outlet property="title" destination="vOK-4i-e5q" id="bSD-iW-3S9"/>
+            </connections>
+            <point key="canvasLocation" x="-449" y="-587"/>
+        </collectionViewCell>
+    </objects>
+</document>

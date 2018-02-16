@@ -14,33 +14,35 @@ import SVProgressHUD
 private let reuseIdentifier = "Cell"
 
 class VnExpressCollectionViewController: UICollectionViewController {
-     private let vnexpressContentCell = "vnexpressContentCell"
+    private let vnexpressContentCell = "vnexpressContentCell"
+    var link: String? {
+        didSet {
+           fetchData()
+        }
+    }
     private var items = [RSSItem]() {
         didSet {
             collectionView?.reloadData()
             collectionView?.layoutIfNeeded()
         }
     }
-    var link: String? {
-        didSet {
-            fetchData()
-        }
-    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.collectionView?.register(UINib(nibName: "VNExpressContentCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: vnexpressContentCell)
-        print("viewDidLoad")
+        print("viewDidLoad collectionView frame", collectionView?.frame)
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        print(items.count)
+        print("Items count", items.count)
         return items.count
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: vnexpressContentCell, for: indexPath) as! VNExpressContentCollectionViewCell
         let item = items[indexPath.row]
-        print("here")
+        print("cell Frame", cell.frame)
+        cell.backgroundColor = UIColor.red
         cell.vnexpressTitleLabel.text = item.title
         
         if let urlImage = item.imagesFromDescription?.first {

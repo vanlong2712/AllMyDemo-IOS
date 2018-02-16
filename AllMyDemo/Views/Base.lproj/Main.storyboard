@@ -952,10 +952,10 @@
             </objects>
             <point key="canvasLocation" x="2104.8000000000002" y="-704.79760119940033"/>
         </scene>
-        <!--Express View Controller-->
+        <!--VNExpress RSS-->
         <scene sceneID="Go6-yS-uhn">
             <objects>
-                <viewController id="kFy-Xb-SEd" customClass="VNExpressViewController" customModule="AllMyDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="VNExpress RSS" id="kFy-Xb-SEd" customClass="VNExpressViewController" customModule="AllMyDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CUs-Px-Fn0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1130,7 +1130,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="7Kn-T8-Jd8">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" reuseIdentifier="vnexpressContentCell" id="7Kn-T8-Jd8">
                                 <rect key="frame" x="12.5" y="0.0" width="350" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
